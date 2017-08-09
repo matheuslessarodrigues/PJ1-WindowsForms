@@ -4,6 +4,8 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WindowsFormsTest
@@ -15,27 +17,23 @@ namespace WindowsFormsTest
             InitializeComponent();
         }
 
-		private void Form1_Load( object sender, EventArgs e )
-		{
-			checkBox1.Enabled = false;
-			checkBox2.Enabled = false;
-		}
-
-		private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-			checkBox1.Enabled = !checkBox1.Enabled;
-			checkBox2.Enabled = !checkBox2.Enabled;
-	
-			bigTextbox.AppendText( "Clicou no botao ne?\n" );
-		}
+            textBox1.AppendText("\n");
+            textBox1.AppendText("AEEE " + trackBar1.Value);
 
-		private void smallButton_Click( object sender, EventArgs e )
-		{
-			bigTextbox.AppendText( "Clicou no botaozin ne?\n" );
-		}
 
-		private void bigTextbox_TextChanged( object sender, EventArgs e )
-		{
-		}
-	}
+            checkBox1.Enabled = !checkBox1.Enabled;
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            textBox1.Text = "OI, EU SOU O GOKU";
+        }
+
+        private void trackBar1_Scroll(object sender, EventArgs e)
+        {
+            label.Text = trackBar1.Value.ToString();
+        }
+    }
 }
