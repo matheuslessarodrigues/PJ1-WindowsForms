@@ -44,7 +44,6 @@ namespace WindowsFormsTest
         private void button2_Click(object sender, EventArgs e)
         {
 			new Form2().ShowDialog();
-            LogicaMina(button2);
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -66,5 +65,10 @@ namespace WindowsFormsTest
 		{
 			button1.Text = "EEPPAAAAA";
 		}
-	}
+
+        private void rAPAZIADAToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            button1.Text = "TAMU JUNTO";
+        }
+    }
 }
