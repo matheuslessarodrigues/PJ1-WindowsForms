@@ -43,6 +43,7 @@ namespace WindowsFormsTest
 
         private void button2_Click(object sender, EventArgs e)
         {
+			new Form2().ShowDialog();
             LogicaMina(button2);
         }
 
@@ -55,5 +56,15 @@ namespace WindowsFormsTest
         {
             LogicaMina(button4);
         }
-    }
+
+		private void toolStripMenuItem1_Click( object sender, EventArgs e )
+		{
+
+		}
+
+		private void cOOOEEEEToolStripMenuItem_Click( object sender, EventArgs e )
+		{
+			button1.Text = "EEPPAAAAA";
+		}
+	}
 }
