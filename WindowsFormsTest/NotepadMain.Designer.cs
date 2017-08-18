@@ -64,6 +64,7 @@
             this.ajudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exibirAjudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sobreOBlocoDeNotasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fontDialog = new System.Windows.Forms.FontDialog();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -303,6 +304,7 @@
             this.fonteToolStripMenuItem.Name = "fonteToolStripMenuItem";
             this.fonteToolStripMenuItem.Size = new System.Drawing.Size(221, 22);
             this.fonteToolStripMenuItem.Text = "Fonte...";
+            this.fonteToolStripMenuItem.Click += new System.EventHandler(this.fonteToolStripMenuItem_Click);
             // 
             // exibirToolStripMenuItem
             // 
@@ -315,7 +317,7 @@
             // barraDeStatusToolStripMenuItem
             // 
             this.barraDeStatusToolStripMenuItem.Name = "barraDeStatusToolStripMenuItem";
-            this.barraDeStatusToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.barraDeStatusToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.barraDeStatusToolStripMenuItem.Text = "Barra de status";
             // 
             // ajudaToolStripMenuItem
@@ -338,6 +340,10 @@
             this.sobreOBlocoDeNotasToolStripMenuItem.Name = "sobreOBlocoDeNotasToolStripMenuItem";
             this.sobreOBlocoDeNotasToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
             this.sobreOBlocoDeNotasToolStripMenuItem.Text = "Sobre o Bloco de notas";
+            // 
+            // fontDialog
+            // 
+            this.fontDialog.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // NotepadMain
             // 
@@ -394,5 +400,6 @@
         private System.Windows.Forms.ToolStripMenuItem ajudaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exibirAjudaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sobreOBlocoDeNotasToolStripMenuItem;
+        private System.Windows.Forms.FontDialog fontDialog;
     }
 }

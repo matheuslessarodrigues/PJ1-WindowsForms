@@ -16,5 +16,12 @@ namespace WindowsFormsTest
         {
             InitializeComponent();
         }
+
+        private void fonteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fontDialog.Font = textBox.Font;
+            fontDialog.ShowDialog( this );
+            textBox.Font = fontDialog.Font;
+        }
     }
 }
