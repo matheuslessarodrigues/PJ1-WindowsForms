@@ -70,5 +70,10 @@ namespace WindowsFormsTest
         {
             button1.Text = "TAMU JUNTO";
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            comboBoxLabel.Text = comboBox1.Text;
+        }
     }
 }

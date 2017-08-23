@@ -38,6 +38,9 @@
             this.rAPAZIADAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gOKUToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAEEEEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fontDialog1 = new System.Windows.Forms.FontDialog();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBoxLabel = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -128,27 +131,53 @@
             // rAPAZIADAToolStripMenuItem
             // 
             this.rAPAZIADAToolStripMenuItem.Name = "rAPAZIADAToolStripMenuItem";
-            this.rAPAZIADAToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.rAPAZIADAToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             this.rAPAZIADAToolStripMenuItem.Text = "RAPAZIADA";
             this.rAPAZIADAToolStripMenuItem.Click += new System.EventHandler(this.rAPAZIADAToolStripMenuItem_Click);
             // 
             // gOKUToolStripMenuItem
             // 
             this.gOKUToolStripMenuItem.Name = "gOKUToolStripMenuItem";
-            this.gOKUToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.gOKUToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             this.gOKUToolStripMenuItem.Text = "GOKU";
             // 
             // eAEEEEToolStripMenuItem
             // 
             this.eAEEEEToolStripMenuItem.Name = "eAEEEEToolStripMenuItem";
-            this.eAEEEEToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.eAEEEEToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             this.eAEEEEToolStripMenuItem.Text = "EAEEEE";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Sim",
+            "Não",
+            "Talvez",
+            "Pudim"});
+            this.comboBox1.Location = new System.Drawing.Point(12, 37);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 9;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // comboBoxLabel
+            // 
+            this.comboBoxLabel.AutoSize = true;
+            this.comboBoxLabel.Location = new System.Drawing.Point(201, 37);
+            this.comboBoxLabel.Name = "comboBoxLabel";
+            this.comboBoxLabel.Size = new System.Drawing.Size(0, 13);
+            this.comboBoxLabel.TabIndex = 11;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(679, 443);
+            this.Controls.Add(this.comboBoxLabel);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -175,6 +204,9 @@
         private System.Windows.Forms.ToolStripMenuItem rAPAZIADAToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gOKUToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eAEEEEToolStripMenuItem;
+        private System.Windows.Forms.FontDialog fontDialog1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label comboBoxLabel;
     }
 }
 
